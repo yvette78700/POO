@@ -1,0 +1,82 @@
+
+//ORIENTE OBJET/
+
+----->INCONVENIENTS
+
+- Techniquement on ne peut rien faire de plus avec l'orienté objet qu'avec le procedural
+-En général l'approche orienté objet est moins intuitive que l'approche procedural pour l'esprit humain
+-Perte de performance (pouvant être amélioré par divers moyen d'optimaisation)
+
+----->AVANTAGES
+
+-Modulariser afin d'avoir un code évolutif
+-Encourage le travail collaboratif(pas besoin de reouvrir toutes les pages,l'UML permet de decrire le comportement de l'appliaction et les interactions entre les objets)
+-Masquer la complexité grace au principe d'encapsulation
+-Possibilité de documenter le code
+-Re-utilisation du code ,ne pas repartir de zéro,effectuer un code type pouvant être repris sur d'autres projets.code générique
+
+Cest ce que donne des modules sur DRUPAL,c est aussi comme que sont né les framework avec des bibliotheques que les developpeurs se constituaient ,ils ré-utilisaient 
+ce qu'ils faisaient.
+Exemple:Apple ne vas pas de zero pour sortir une nouvelle version il prend le precent et l'ameliore
+
+-Permet de simplifier la maintenance et mise à jour
+tout se passe dans la classe en question
+-On Assouplir le code  ,le factoriser ,meilleur conceptualisation les pages seront moins chargéses (+ de fichiers)
+-Plus d'options dans le langage(heriatge,surcharge,abstraction,finalisation,interface etc ...)
+-Cela vous permettra de passer plsu facielemnt aux technologies java,.net,c++,c#,....
+
+
+----->CONCLUSION
+
+vous n'aurez pa sbesoin d'orienté objet pour par exemple boutique réalisée en proceduarl mais pour tous les projets de grande envergures ,
+avec des equipes de developpement ;mis à jour regulière
+
+----->EXEMPLE
+
+class Membre
+{
+    $pseudo,$mdp;
+    public function seconnecter();
+    public function  sInscrire();
+
+
+}
+
+class Panier
+{
+    $nbProduit,$prix;
+    public function ajouterArticledansPanier();
+
+    public function retierArticleDansPanier();
+}
+
+---->VOCABULAIRE
+
+variable en orienté objet sont appelé =propriété= ou attribut
+
+Fonction sont appélé = méthode
+
+Instance est objet
+
+Une classe permet de contenir des variables avec des informations ainsi que des methodes comportant des traitements
+
+Une class est un regroupement d'informations (plan,modele)
+
+un objet c'est l'application du plan c'est un exemlpire de la class
+
+--->Niveau de visibilite des élement de la classe
+
+public l'elemnt est visible partout dans la class et en dehors
+
+protected il est visible dans la class et  ceux issu de la classexemple 
+
+class Membre extend Panier 
+
+Private visible que dans la class
+
+
+-----on envoie une donnée dans le setter les données sont controlé avec les if une fois que c'est bon je l'envoie dens la variable sprivaé de destination
+
+et pir y acceder on fait appel au getter
+
+--si le constructeur a plusieurs argument on aura autant de setteur et getter que d'argument
